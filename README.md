@@ -11,7 +11,7 @@ Originally made it for my personal usage, but some other people might find this 
 It gives most of the Sven Co-op point enitites colorcoded model/sprites representatives.
 
 The current upload is Sven Co-op specific, but with editing any goldsrc game FGD and adding their
-own game specific entity icons could make it work with that game.
+own game specific entity icons should make it work with that game.
 
 **Installation**
 
