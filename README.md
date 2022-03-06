@@ -1,6 +1,9 @@
 
 GoldSrc-Map-Editor-Entity-Icons
 =
+
+![preview](icon_prew.png)
+
 This pack is tested with JACK
 
 (Works with Hammer Editor and Sven Craft too.)
