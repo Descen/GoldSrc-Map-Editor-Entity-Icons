@@ -2,7 +2,7 @@
 GoldSrc-Map-Editor-Entity-Icons
 =
 
-![preview](icon_prew.png)
+![preview](icon_prew.jpg)
 
 This pack is tested with JACK
 
