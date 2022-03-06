@@ -1,8 +1,6 @@
-==============================================================
+
 GoldSrc-Map-Editor-Entity-Icons
-By Descen (Discord: Descen#3491)
-Additional credits: Valve Software, Banan2288, Sven Co-op team
-==============================================================
+=
 This pack is tested with JACK
 Works with Hammer Editor and Sven Craft too.
 
@@ -20,11 +18,11 @@ Copy the pack into your "../Sven Co-op/" folder.
 
 **Credits**
 
--Valve Software - Valve Developer Community
-Borrowing the icon designs
+- Valve Software - Valve Developer Community
+   - General icon designs
 
--Banan2288
-Borrowing some icon designs
+- Banan2288
+  - Borrowing some icon designs
 
--Sven Co-op team
-game_text, env_sound icons and minor design choices
+- Sven Co-op team:
+   - game_text, env_sound icons and minor design choices
