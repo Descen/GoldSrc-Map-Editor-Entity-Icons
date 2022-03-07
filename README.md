@@ -16,11 +16,11 @@ It gives most of the Sven Co-op point enitites colorcoded model/sprites represen
 The current upload is Sven Co-op specific, but with editing any goldsrc game FGD and adding their
 own game specific entity icons should make it work with that game.
 
-**Installation**
-
+## Installation 
+#### **For Sven Co-op:** 
 Copy the pack into your "../Sven Co-op/" folder.
 
-**Credits**
+## Credits 
 
 - Valve Software - Valve Developer Community
    - General icon designs
