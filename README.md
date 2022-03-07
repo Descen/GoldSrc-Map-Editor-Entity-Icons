@@ -8,7 +8,7 @@ This pack is tested with JACK
 
 (Works with Hammer Editor and Sven Craft too.)
 
-**About this pack**
+## About this pack
 
 Originally made it for my personal usage, but some other people might find this usefull too.
 It gives most of the Sven Co-op point enitites colorcoded model/sprites representatives.
