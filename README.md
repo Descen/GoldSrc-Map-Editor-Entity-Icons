@@ -11,10 +11,10 @@ This pack is tested with JACK
 ## About this pack
 
 Originally made it for my personal usage, but some other people might find this usefull too.
-It gives most of the Sven Co-op point enitites colorcoded model/sprites representatives.
+It gives most of the point enitites colorcoded model/sprites representatives.
 
-The current upload is Sven Co-op specific, but with editing any goldsrc game FGD and adding their
-own game specific entity icons should make it work with that game.
+~~The current upload is Sven Co-op specific, but with editing any goldsrc game FGD and adding their
+own game specific entity icons should make it work with that game.~~
 
 ## Installation 
 
@@ -34,3 +34,7 @@ Copy the pack into your "../Sven Co-op/" folder.
 
 - Sven Co-op team:
    - game_text, env_sound icons and minor design choices
+
+## Changelog 
+
+- 08/03/22 - The upload now expanded with vanilla Half-Life entity support.
