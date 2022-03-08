@@ -17,6 +17,10 @@ The current upload is Sven Co-op specific, but with editing any goldsrc game FGD
 own game specific entity icons should make it work with that game.
 
 ## Installation 
+
+#### **For Half-life:** 
+Copy the pack into your "../Half-Life/" folder.
+
 #### **For Sven Co-op:** 
 Copy the pack into your "../Sven Co-op/" folder.
 
