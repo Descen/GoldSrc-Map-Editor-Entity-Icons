@@ -5228,7 +5228,7 @@
 	]
 ]
 
-@PointClass base(Targetname, Angles) size(-8 -8 -8, 8 8 8) color(247 181 82) studio("models/editor/path_corner.mdl") = path_corner : "Moving platform stop"
+@PointClass base(Targetname, Angles) flags(Path) size(-8 -8 -8, 8 8 8) color(247 181 82) studio("models/editor/path_corner.mdl") = path_corner : "Moving platform stop"
 [
 	spawnflags(Flags) =
 	[
@@ -5335,7 +5335,7 @@
 
 
 
-@PointClass base(Targetname) size(-8 -8 -8, 8 8 8) color(125 255 255) studio("models/editor/path_waypoint.mdl") = path_waypoint : "NPC Path Waypoint"
+@PointClass base(Targetname) flags(Path) size(-8 -8 -8, 8 8 8) color(125 255 255) studio("models/editor/path_waypoint.mdl") = path_waypoint : "NPC Path Waypoint"
 [
 	target(target_destination) 					: "Next Path_waypoint"
 	alternate_target(target_destination) 		: "Alternate Next Path_waypoint" 	//Alternate Waypoint to use if we're toggled to use our alternate.
@@ -5415,7 +5415,7 @@
 
 
 
-@PointClass base(Targetname, Angles) size(-8 -8 -8, 8 8 8) color(255 148 0) studio("models/editor/path_track.mdl") = path_track : "Train Track Path"
+@PointClass base(Targetname, Angles) flags(Path) size(-8 -8 -8, 8 8 8) color(255 148 0) studio("models/editor/path_track.mdl") = path_track : "Train Track Path"
 [
 	spawnflags(Flags) =
 	[
