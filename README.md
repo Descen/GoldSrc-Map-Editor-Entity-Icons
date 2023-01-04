@@ -6,7 +6,7 @@ GoldSrc-Map-Editor-Entity-Icons
 
 This pack is tested with JACK
 
-(Works with Hammer Editor and Sven Craft too.)
+(Works with Hammer Editor(v3.5) and Sven Craft too.)
 
 ## About this pack
 
