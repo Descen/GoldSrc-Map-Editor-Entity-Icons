@@ -5,7 +5,7 @@
 // Updated by Sniper and Protector to include the Sven Co-op 4.5 Entities.
 // VHE 3.5b-ready by Puchi, JPolito, and AdamR. (Model support)
 // Tidied up by AdamR because you all suck hard at white spacing.
-// Guidelines below added by Silencer so this file stops becoming a mess.(lol baseclasses all over the place...)
+// Guidelines below added by Silencer so this file stops becoming a mess.
 // Sorted by Puchi and Silencer. Proper filter options added by Puchi.
 // 
 // Completely overhauled, and icon support added by Descen (Discord: Descen#6152)
@@ -17,10 +17,7 @@
 //	- Suuure
 //	
 //
-// [] Get unity into it. (Commenting, line breaks, use of BaseClasses <-- Just no, makes it a whole mess
-// 	  when every second keyvalue is it's self contained base class, cross referencing thru 4 other base classes. 
-//    So good luck editing one keyvalue definiton for an entity to make it better fit the definition, eg. for func_door instead of 'pitch yaw roll', 'movement dirtection',
-//	  and also making the entity properties window a mess, when for each entity the same keyvalue jumping around on the list. Rant over)
+// [] Get unity into it. (Commenting, line breaks)
 //	
 //   [] Cut explanations of entities, keys and values out of the file and store them elsewhere for
 //     reference.
@@ -171,7 +168,7 @@
     killtarget(target_destination) : "Kill Target"
     delay(string) : "Delay Before Trigger" : "0"
     angles(string) : "Pitch Yaw Roll (Y Z X)" : "0 0 0"
-    blank(string) : "[==== Monster Options ====]"
+    blank1(string) : "[==== Monster Options ====]"
 	m_iszEntity(string) : "Target Monster"
 	m_iszPlay(string) : "Action Animation" : ""
 	m_flRadius(integer) : "Search Radius" : 512
@@ -202,7 +199,7 @@
 [
     ondestroyfn(string) : "OnDestroy Function"
     targetname(target_source) : "Name"
-    blank(string) : ""
+    blank1(string) : ""
 	message(sound) : "Sound File"
 	health(integer) : "Volume (10 = loudest)" : 10
 	playmode(choices) : "Play Mode" : 0 =
@@ -213,7 +210,7 @@
 		5: "Linear / Play Once"
 		6: "Linear / Loop"
 	]	
-    blank(string) : "[==== Sound Effect Properties ====]"
+    blank1(string) : "[==== Sound Effect Properties ====]"
 	preset(choices) : "Dynamic Presets" : 0 =
 	[
 		0: "None"
@@ -351,7 +348,7 @@
 		8: "Hover in the air, ignore brush collision"
 	]
     m_flCustomRespawnTime(string) : "Custom respawn time"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -438,7 +435,7 @@
 		8: "Hover in the air, ignore brush collision"
 	]
     m_flCustomRespawnTime(string) : "Custom respawn time"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -505,7 +502,7 @@
 		3: "Toggle"
 	]	
 	master(string) : "Master"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -616,7 +613,7 @@
     targetname(target_source) : "Name"
     angles(string) : "Pitch Yaw Roll (Y Z X)" : "0 0 0"
 	model(studio) : "Model"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -661,7 +658,7 @@
     angles(string) : "Pitch Yaw Roll (Y Z X)" : "0 0 0"
 	model(sprite) : "Sprite Name" : "sprites/glow01.spr"
 	framerate(integer) : "Frames per second" : 10
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -783,7 +780,7 @@
 	]
     path_name(string) : "Path Name" //The name of the path_waypoint, path_condition, or path_condition_controller this monster will look to.
 	guard_ent(string): "Entity to Guard" : ""   // This will make the monster follow/protect whoever is specified
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -841,7 +838,7 @@
 	framerate(string) : "Framerate" : "10.0"
 	model(sprite) : "Sprite Name" : "sprites/fire.spr"
 	scale(string) : "Scale" : "1"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -964,7 +961,7 @@
 	density(integer) : "Bubble density" : 2
 	frequency(integer) : "Bubble frequency" : 2
 	current(integer) : "Speed of Current" : 0
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -1087,7 +1084,7 @@
 	targetname(target_source) : "Name"
 	model(sprite) : "Sprite Name" : "sprites/glow01.spr"
 	scale(integer) : "Scale" : 1
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -1175,7 +1172,7 @@
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"
     target(target_destination) : "Target"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -1233,7 +1230,7 @@
 	target(string) : "Entity to affect"
 	netname(string) : "Player to affect"
 	message(string) : "Entity to copy from"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -1313,7 +1310,7 @@
 [
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"
-	blank(string) : "[==== Projectille Settings ====]"
+	blank1(string) : "[==== Projectille Settings ====]"
 	angles(string) : "Direction (Pitch Yaw Roll [Y Z X])" : "0 0 0"
 	shootmodel(studio) : "Model or Sprite name" : ""
 	shootsounds(choices) : "Material Sound" : -1 =
@@ -1465,7 +1462,7 @@
 		2: "Facing Upright"
 		4: "Orientated"
 	]
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -1524,7 +1521,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	movesnd(choices) : "Move Sound" : 0 =
 	[
 		0: "No Sound"
@@ -1691,7 +1688,7 @@
 		"monster_gonome" : "Zombie Gonome"
 		"monster_zombie_soldier" : "Zombie Soldier"
 	]
-	blank(string) : "[==== VFX Settings ====]"
+	blank1(string) : "[==== VFX Settings ====]"
 	m_flBeamRadius(integer)			: "Beam Radius (max)"	: 255
 	m_iBeamAlpha(integer)			: "Beam Alpha"		: 128
 	m_iBeamCount(integer)			: "Beam Count"		: 8
@@ -1756,7 +1753,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Breakable Settings ====]"
+	blank1(string) : "[==== Breakable Settings ====]"
 	displayname(string) : "HUD Info name"
 	health(integer) : "Strength" : 1
 	material(choices) : "Material type" : 0 =
@@ -1913,30 +1910,6 @@
 	ondestroyfn(string) : "OnDestroy Function"
 	globalname(string) : "Global Entity Name"
 	targetname(target_source) : "Name"
-    target(target_destination) : "Target"
-	use_type(choices) : "Use Type" : 3 =
-	[
-		0: "Off"
-		1: "On"
-		2: "Set"
-		3: "Toggle"
-	]
-	delay(string) : "Delay before trigger" : "0"
-	wait(integer) : "Delay before reset (-1 stay)" : 3
-	killtarget(target_destination) : "Kill Target"
-	angles(choices) : "Movement Direction" : "0 0 0" =
-	[
-		"0 90 0": "North"
-		"0 0 0": "East"
-		"0 270 0": "South"
-		"0 180 0": "West"
-		"-90 0 0": "Up"
-		"90 0 0": "Down"
-	]
-	speed(integer) : "Speed" : 5
-	health(integer) : "Health (shootable if 0)" : 0
-	lip(integer) : "Lip"
-	master(string) : "Master"
 	classify(choices) : "Classification" : 0 =
 	[
 		-1 : "None"
@@ -1966,7 +1939,33 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank2(string) : "[==== Sound settings ====]"
+	master(string) : "Master"	
+	blank1(string) : "[==== Trigger & Targetting ====]"	
+    target(target_destination) : "Target"
+	killtarget(target_destination) : "Kill Target"	
+	use_type(choices) : "Use Type" : 3 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Set"
+		3: "Toggle"
+	]
+	delay(string) : "Delay before trigger" : "0"
+	wait(integer) : "Delay before reset (-1 stay)" : 3
+	health(integer) : "Health (shootable if 0)" : 0		
+	blank2(string) : "[==== Speed & Movement ====]"		
+	angles(choices) : "Movement Direction" : "0 0 0" =
+	[
+		"0 90 0": "North"
+		"0 0 0": "East"
+		"0 270 0": "South"
+		"0 180 0": "West"
+		"-90 0 0": "Up"
+		"90 0 0": "Down"
+	]
+	speed(integer) : "Speed" : 5
+	lip(integer) : "Substract from movement direction"	
+	blank3(string) : "[==== Sound settings ====]"
 	sounds(choices) : "Sounds" : 0 =
 	[
 		0: "None"
@@ -2032,7 +2031,6 @@
 		7: "Gen. Containment"
 		8: "Maintenance area"
 	]
-	blank3(string) : "(---- Sound Overriding ----)"
 	noise(sound) : "Sound Override"
 	locked_sound_override(sound) : "Locked Sound Override"
 	unlocked_sound_override(sound) : "Unlocked Sound Override"
@@ -2075,7 +2073,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	blank(string) : "[==== Inventory Rules ====]"
+	blank5(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -2110,7 +2108,7 @@
 		1 : "Yes"
 	]
 	target_on_fail(string) : "Target: Inventory rules failed" : ""
-	blank5(string) : "[==== Filtering Options ====]"
+	blank6(string) : "[==== Filtering Options ====]"
 	tinfilter(string) : "Name In Filter"
 	tinfiltertype(choices) : "Name In Filter Type" : 0 =
 	[
@@ -2135,7 +2133,7 @@
 		0: "Exclude"
 		1: "Include"
 	]
-	blank6(string) : "[==== ZHLT Options ====]"
+	blank7(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -2166,7 +2164,7 @@
 	light_origin(string) : "ZHLT Light Origin Target"
 	spawnflags(flags) =
 	[
-		1: "Don't move" : 0
+		1: "Don't move" : 1
 		32: "Toggle" : 0
 		64: "Sparks" : 0
 		256: "Touch Activates": 0
@@ -2180,7 +2178,7 @@
 	targetname(target_source) : "Name"
     angles(string) : "Pitch Yaw Roll (Y Z X)" : "0 0 0"
 	frags(string) : "Direction Tolerance" : "90"
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -2251,7 +2249,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -2346,61 +2344,24 @@
 	[
 		0: "No"
 		1: "Yes"
-	]
-	target(target_destination) : "Target"
+	] 
 	m_iObeyTriggerMode(choices) : "Obey Trigger Mode" : 2 =
 	[
 		0 : "No"
 		1 : "Yes"
 		2 : "Yes, even when currently moving"
 	]
-    killtarget(target_destination) : "Kill Target"
-	fireonopening(string) : "Fire On Open Start"
-	fireonopening_triggerstate(choices) : "Fire On Open Start Trigger State" : 2 =
+	m_iOpenFlags(choices) : "Who can open this" : 0 =
 	[
-		0: "Off"
-		1: "On"
-		2: "Toggle"
+		0: "Default (0)"
+		1: "Pushables (1)"
+		2: "No clients (2)"
+		3: "1 + 2"
+		4: "Everything else (4)"
+		5: "1 + 4"
+		6: "2 + 4"
+		7: "1 + 2 + 4"
 	]
-	fireonclosing(string) : "Fire On Close Start"
-	fireonclosing_triggerstate(choices) : "Fire On Close Start Trigger State" : 2 =
-	[
-		0: "Off"
-		1: "On"
-		2: "Toggle"
-	]
-	// This can also be done with "fireonopen" (backward compatibility)
-	fireonopened(string) : "Fire On Open End"
-	fireonopened_triggerstate(choices) : "Fire On Open End Trigger State" : 2 =
-	[
-		0: "Off"
-		1: "On"
-		2: "Toggle"
-	]
-	// This can also be done with "netname" (backward compatibility)
-	fireonclosed(string) : "Fire On Close End"
-	fireonclosed_triggerstate(choices) : "Fire On Close End Trigger State" : 2 =
-	[
-		0: "Off"
-		1: "On"
-		2: "Toggle"
-	]
-	delay(string) : "Delay before trigger" : "0"
-	fireonopen(string) : "Fire on Open (Legacy)"
-	netname(string) : "Fire on Close (Legacy)"
-	angles(choices) : "Movement Direction" : "0 0 0" =
-	[
-		"0 90 0": "North"
-		"0 0 0": "East"
-		"0 270 0": "South"
-		"0 180 0": "West"
-		"-90 0 0": "Up"
-		"90 0 0": "Down"
-	]
-	speed(integer) : "Speed" : 100
-	wait(integer) : "Delay before close, -1 stay open " : 4
-	dmg(integer) : "Damage inflicted when blocked" : 0
-	lip(integer) : "Lip"
 	classify(choices) : "Classification" : 0 =
 	[
 		-1 : "None"
@@ -2431,19 +2392,58 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	m_iOpenFlags(choices) : "Who can open this" : 0 =
+	master(string) : "Master"		
+	blank1(string) : "[==== Trigger & Targetting ====]"
+	delay(string) : "Delay before trigger" : "0"	
+	fireonopening(string) : "Fire On Open Start"
+	fireonopening_triggerstate(choices) : "Fire On Open Start Trigger State" : 2 =
 	[
-		0: "Default (0)"
-		1: "Pushables (1)"
-		2: "No clients (2)"
-		3: "1 + 2"
-		4: "Everything else (4)"
-		5: "1 + 4"
-		6: "2 + 4"
-		7: "1 + 2 + 4"
+		0: "Off"
+		1: "On"
+		2: "Toggle"
 	]
-	master(string) : "Master"
-	blank(string) : "[==== Sound settings ====]"
+	fireonclosing(string) : "Fire On Close Start"
+	fireonclosing_triggerstate(choices) : "Fire On Close Start Trigger State" : 2 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Toggle"
+	]
+	// This can also be done with "fireonopen" (backward compatibility)
+	fireonopened(string) : "Fire On Open End"
+	fireonopened_triggerstate(choices) : "Fire On Open End Trigger State" : 2 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Toggle"
+	]
+	// This can also be done with "netname" (backward compatibility)
+	fireonclosed(string) : "Fire On Close End"
+	fireonclosed_triggerstate(choices) : "Fire On Close End Trigger State" : 2 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Toggle"
+	]
+	target(target_destination) : "Target"	
+    killtarget(target_destination) : "Kill Target"	
+	fireonopen(string) : "Fire on Open (Legacy)"
+	netname(string) : "Fire on Close (Legacy)"
+	blank2(string) : "[==== Movement & Speed ====]"
+	angles(choices) : "Movement Direction" : "0 0 0" =
+	[
+		"0 90 0": "North"
+		"0 0 0": "East"
+		"0 270 0": "South"
+		"0 180 0": "West"
+		"-90 0 0": "Up"
+		"90 0 0": "Down"
+	]
+	speed(integer) : "Speed" : 100
+	wait(integer) : "Delay before close, -1 stay open " : 4
+	dmg(integer) : "Damage inflicted when blocked" : 0
+	lip(integer) : "Substract from movement distance"
+	blank3(string) : "[==== Sound settings ====]"
 	movesnd(choices) : "Move Sound" : 0 =
 	[
 		0: "No Sound"
@@ -2524,7 +2524,6 @@
 		7: "Gen. Containment"
 		8: "Maintenance area"
 	]
-	blank2(string) : "(---- Sound Overriding ----)"
 	noise1(sound) : "Move Sound Override"
 	noise2(sound) : "Stop Sound Override"
 	locked_sound_override(sound) : "Locked Sound Override"
@@ -2532,7 +2531,7 @@
 	locked_sentence_override(string) : "Locked Sentence Override"
 	unlocked_sentence_override(string) : "Unlocked Sentence Override"
 	soundlist(string) : "Sound Replacement File"
-	blank3(string) : "[==== Render Settings ====]"
+	blank4(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -2568,7 +2567,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	blank4(string) : "[==== Breakable Settings ====]"
+	blank5(string) : "[==== Breakable Settings ====]"
 	breakable(choices) : "Breakable" : 0 =
 	[
 		0: "No"
@@ -2637,7 +2636,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
-	blank5(string) : "[==== Inventory Rules ====]"
+	blank6(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -2671,7 +2670,7 @@
 		1 : "Yes"
 	]
 	target_on_fail(string) : "Target: Inventory rules failed" : ""
-	blank6(string) : "[==== Filtering Options ====]"
+	blank7(string) : "[==== Filtering Options ====]"
 	tinfilter(string) : "Name In Filter"
 	tinfiltertype(choices) : "Name In Filter Type" : 0 =
 	[
@@ -2696,7 +2695,7 @@
 		0: "Exclude"
 		1: "Include"
 	]
-	blank7(string) : "[==== ZHLT Options ====]"
+	blank8(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -2747,54 +2746,24 @@
 	[
 		0: "No"
 		1: "Yes"
-	]	
-	target(target_destination) : "Target"
+	] 
 	m_iObeyTriggerMode(choices) : "Obey Trigger Mode" : 2 =
 	[
 		0 : "No"
 		1 : "Yes"
 		2 : "Yes, even when currently moving"
 	]
-    killtarget(target_destination) : "Kill Target"
-	fireonopening(string) : "Fire On Open Start"
-	fireonopening_triggerstate(choices) : "Fire On Open Start Trigger State" : 2 =
+	m_iOpenFlags(choices) : "Who can open this" : 0 =
 	[
-		0: "Off"
-		1: "On"
-		2: "Toggle"
+		0: "Default (0)"
+		1: "Pushables (1)"
+		2: "No clients (2)"
+		3: "1 + 2"
+		4: "Everything else (4)"
+		5: "1 + 4"
+		6: "2 + 4"
+		7: "1 + 2 + 4"
 	]
-	fireonclosing(string) : "Fire On Close Start"
-	fireonclosing_triggerstate(choices) : "Fire On Close Start Trigger State" : 2 =
-	[
-		0: "Off"
-		1: "On"
-		2: "Toggle"
-	]
-	// This can also be done with "fireonopen" (backward compatibility)
-	fireonopened(string) : "Fire On Open End"
-	fireonopened_triggerstate(choices) : "Fire On Open End Trigger State" : 2 =
-	[
-		0: "Off"
-		1: "On"
-		2: "Toggle"
-	]
-	// This can also be done with "netname" (backward compatibility)
-	fireonclosed(string) : "Fire On Close End"
-	fireonclosed_triggerstate(choices) : "Fire On Close End Trigger State" : 2 =
-	[
-		0: "Off"
-		1: "On"
-		2: "Toggle"
-	]
-	delay(string) : "Delay before trigger" : "0"
-	fireonopen(string) : "Fire on Open (Legacy)"
-	netname(string) : "Fire on Close (Legacy)"
-	distance(integer) : "Distance in degrees" : 90
-	angles(string) : "Object Direction (Pitch Yaw Roll)"
-	speed(integer) : "Speed" : 100
-	wait(integer) : "Delay before close, -1 stay open " : 4
-	dmg(integer) : "Damage inflicted when blocked" : 0
-	lip(integer) : "Lip"
 	classify(choices) : "Classification" : 0 =
 	[
 		-1 : "None"
@@ -2825,19 +2794,59 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	m_iOpenFlags(choices) : "Who can open this" : 0 =
+	master(string) : "Master"		
+	blank1(string) : "[==== Trigger & Targetting ====]"
+	delay(string) : "Delay before trigger" : "0"	
+	fireonopening(string) : "Fire On Open Start"
+	fireonopening_triggerstate(choices) : "Fire On Open Start Trigger State" : 2 =
 	[
-		0: "Default (0)"
-		1: "Pushables (1)"
-		2: "No clients (2)"
-		3: "1 + 2"
-		4: "Everything else (4)"
-		5: "1 + 4"
-		6: "2 + 4"
-		7: "1 + 2 + 4"
+		0: "Off"
+		1: "On"
+		2: "Toggle"
 	]
-	master(string) : "Master"
-	blank(string) : "[==== Sound settings ====]"
+	fireonclosing(string) : "Fire On Close Start"
+	fireonclosing_triggerstate(choices) : "Fire On Close Start Trigger State" : 2 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Toggle"
+	]
+	// This can also be done with "fireonopen" (backward compatibility)
+	fireonopened(string) : "Fire On Open End"
+	fireonopened_triggerstate(choices) : "Fire On Open End Trigger State" : 2 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Toggle"
+	]
+	// This can also be done with "netname" (backward compatibility)
+	fireonclosed(string) : "Fire On Close End"
+	fireonclosed_triggerstate(choices) : "Fire On Close End Trigger State" : 2 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Toggle"
+	]
+	target(target_destination) : "Target"	
+    killtarget(target_destination) : "Kill Target"	
+	fireonopen(string) : "Fire on Open (Legacy)"
+	netname(string) : "Fire on Close (Legacy)"
+	blank2(string) : "[==== Movement & Speed ====]"
+	distance(integer) : "Distance in degrees" : 90	
+	angles(choices) : "Movement Direction" : "0 0 0" =
+	[
+		"0 90 0": "North"
+		"0 0 0": "East"
+		"0 270 0": "South"
+		"0 180 0": "West"
+		"-90 0 0": "Up"
+		"90 0 0": "Down"
+	]
+	speed(integer) : "Speed" : 100
+	wait(integer) : "Delay before close, -1 stay open " : 4
+	dmg(integer) : "Damage inflicted when blocked" : 0
+	lip(integer) : "Substract from movement distance"
+	blank3(string) : "[==== Sound settings ====]"
 	movesnd(choices) : "Move Sound" : 0 =
 	[
 		0: "No Sound"
@@ -2918,7 +2927,6 @@
 		7: "Gen. Containment"
 		8: "Maintenance area"
 	]
-	blank2(string) : "(---- Sound Overriding ----)"
 	noise1(sound) : "Move Sound Override"
 	noise2(sound) : "Stop Sound Override"
 	locked_sound_override(sound) : "Locked Sound Override"
@@ -2926,7 +2934,7 @@
 	locked_sentence_override(string) : "Locked Sentence Override"
 	unlocked_sentence_override(string) : "Unlocked Sentence Override"
 	soundlist(string) : "Sound Replacement File"
-	blank3(string) : "[==== Render Settings ====]"
+	blank4(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -2962,7 +2970,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	blank4(string) : "[==== Breakable Settings ====]"
+	blank5(string) : "[==== Breakable Settings ====]"
 	breakable(choices) : "Breakable" : 0 =
 	[
 		0: "No"
@@ -2979,7 +2987,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
-	displayname(string) : "HUD Info name"
+	displayname(string) : "HUD Info name"	
 	onlytrigger(choices) : "Only Trigger" : 0 =
 	[
 		0 : "No"
@@ -3031,7 +3039,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
-	blank5(string) : "[==== Inventory Rules ====]"
+	blank6(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -3065,7 +3073,7 @@
 		1 : "Yes"
 	]
 	target_on_fail(string) : "Target: Inventory rules failed" : ""
-	blank6(string) : "[==== Filtering Options ====]"
+	blank7(string) : "[==== Filtering Options ====]"
 	tinfilter(string) : "Name In Filter"
 	tinfiltertype(choices) : "Name In Filter Type" : 0 =
 	[
@@ -3090,7 +3098,7 @@
 		0: "Exclude"
 		1: "Include"
 	]
-	blank7(string) : "[==== ZHLT Options ====]"
+	blank8(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -3139,7 +3147,7 @@
 @SolidClass  = func_friction : "Surface with a change in friction"
 [
 	modifier(integer) : "Percentage of standard (0 - 100)" : 15
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -3258,7 +3266,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -3343,7 +3351,7 @@
 	CustomRechargeTime(integer) : "Custom Recharge Time" : 0
 	TriggerOnEmpty(target_destination) : "Trigger On Empty"
 	TriggerOnRecharged(target_destination) : "Trigger on Recharged"
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	CustomDeniedSound(sound) : "Custom Denied Sound"
 	CustomStartSound(sound) : "Custom Start Sound"
 	CustomLoopSound(sound) : "Custom Loop Sound"
@@ -3450,7 +3458,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -3526,7 +3534,7 @@
 [
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -3589,7 +3597,7 @@
 [
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -3634,7 +3642,7 @@
 	]
 	m_iszXController(target_destination) : "X Controller"
 	m_iszYController(target_destination) : "Y Controller"
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -3665,7 +3673,7 @@
 		0 : "Vertical"
 		1 : "Horizontal"
 	]
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -3702,7 +3710,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -3823,7 +3831,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	movesnd(choices) : "Move Sound" : 0 =
 	[
 		0: "No Sound"
@@ -3981,7 +3989,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	movesnd(choices) : "Move Sound" : 0 =
 	[
 		0: "No Sound"
@@ -4142,7 +4150,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Pushable Options ====]"
+	blank1(string) : "[==== Pushable Options ====]"
 	minhullsize(string) : "Custom Min Hull Size (X Y Z)" : "0 0 0"
 	maxhullsize(string) : "Custom Max Hull Size (X Y Z)" : "0 0 0"
 	friction(integer) : "Friction (0-400)" : 50
@@ -4315,12 +4323,12 @@
 	CustomRechargeTime(integer) : "Custom Recharge Time" : 0
 	TriggerOnEmpty(target_destination) : "Trigger On Empty"
 	TriggerOnRecharged(target_destination) : "Trigger on Recharged"
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	CustomDeniedSound(sound) : "Custom Denied Sound"
 	CustomStartSound(sound) : "Custom Start Sound"
 	CustomLoopSound(sound) : "Custom Loop Sound"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -4422,7 +4430,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	sounds(choices) : "Sounds" : 21 =
 	[
 		21: "Squeaky"
@@ -4618,7 +4626,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	sounds(choices) : "Fan Sounds" : 0 =
 	[
 		0 : "No Sound"
@@ -4770,7 +4778,7 @@
 		2: "MP5"
 		3: "12mm"
 	]
-	blank(string) : "[==== Relation Settings ====]"
+	blank1(string) : "[==== Relation Settings ====]"
 	relation_player(choices) : "R Player" : 0 =
 	[
 		-2: "Ally"
@@ -4978,7 +4986,7 @@
 [
 	ondestroyfn(string) : "OnDestroy Function"
 	target(target_destination) : "Tank entity name"
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -5037,7 +5045,7 @@
 @SolidClass base(BaseTank) = func_tanklaser : "Brush Laser Turret"
 [
 	laserentity(target_source) : "env_laser Entity"
-	blank(string) : "[==== Relation Settings ====]"
+	blank1(string) : "[==== Relation Settings ====]"
 	relation_player(choices) : "R Player" : 0 =
 	[
 		-2: "Ally"
@@ -5242,7 +5250,7 @@
 
 @SolidClass base(BaseTank) = func_tankrocket : "Brush Rocket Turret" 
 [
-	blank(string) : "[==== Relation Settings ====]"
+	blank1(string) : "[==== Relation Settings ====]"
 	relation_player(choices) : "R Player" : 0 =
 	[
 		-2: "Ally"
@@ -5448,7 +5456,7 @@
 @SolidClass base(BaseTank) = func_tankmortar : "Brush Mortar Turret"
 [
 	iMagnitude(integer) : "Explosion Magnitude" : 100
-	blank(string) : "[==== Relation Settings ====]"
+	blank1(string) : "[==== Relation Settings ====]"
 	relation_player(choices) : "R Player" : 0 =
 	[
 		-2: "Ally"
@@ -5699,7 +5707,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	movesnd(choices) : "Move Sound" : 0 =
 	[
 		0: "No Sound"
@@ -5867,7 +5875,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	sounds(choices) : "Sound" : 0 =
 	[
 		0: "None"
@@ -5963,7 +5971,7 @@
 @SolidClass = func_traincontrols : "Train Controls"
 [
 	target(target_destination) : "Train Name"
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -6064,7 +6072,7 @@
 		0 : "Default"
 		1 : "Fullbright"
 	]
-	blank(string) : "[==== Sound settings ====]"
+	blank1(string) : "[==== Sound settings ====]"
 	movesnd(choices) : "Move Sound" : 0 =
 	[
 		0: "No Sound"
@@ -6205,7 +6213,7 @@
 		9 : "Slow strobe"
 		12: "Underwater"
 	]
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -6391,7 +6399,7 @@
 		7: "1 + 2 + 4"
 	]
 	master(string) : "Master"
-	blank(string) : "[==== Water settings ====]"
+	blank1(string) : "[==== Water settings ====]"
 	skin(choices) : "Contents" : -3 =
 	[
 		-3: "Water"
@@ -6920,7 +6928,7 @@
 	incount(target_destination) : "Counter for IN players"
 	outcount(target_destination) : "Counter for OUT players"
 	// master(string) : "Master"
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -7745,7 +7753,7 @@
 @PointClass size(-16 -16 0, 16 16 24) base(ItemsBase) studio("models/w_oxygen.mdl") = item_airtank : "Oxygen tank" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -7786,7 +7794,7 @@
 @PointClass size(-4 -4 0, 4 4 16) base(ItemsBase) studio("models/w_antidote.mdl") = item_antidote : "Poison antidote" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -7827,7 +7835,7 @@
 @PointClass size(-11 -11 0, 11 11 36) base(ItemsBase) studio("models/barney_vest.mdl") = item_armorvest : "Armor vest" 
 [
 	soundlist(string) : "Sound Replacement File"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -7870,7 +7878,7 @@
 	health(integer) : "Charge Supplied" : 0
 	healthcap(integer) : "Charge Cap" : 0
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -7911,7 +7919,6 @@
 @PointClass color(0 0 200) studio() = item_generic : "Generic scenery item" 
 [
 	ondestroyfn(string) : "OnDestroy Function"
-	globalname(string) : "Global Entity Name"
 	targetname(target_source) : "Name"
     target(target_destination) : "Target"
     killtarget(target_destination) : "Kill Target"
@@ -7939,7 +7946,7 @@
 	minhullsize(string) : "Custom Min Hull Size (X Y Z)" : "0 0 0"
 	maxhullsize(string) : "Custom Max Hull Size (X Y Z)" : "0 0 0"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -7990,7 +7997,7 @@
 	health(integer) : "Health Supplied" : 0
 	healthcap(integer) : "Health Cap" : 0
 	soundlist(string) : "Sound Replacement File"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -8031,7 +8038,7 @@
 @PointClass size(-8 -8 0, 8 8 20) base(ItemsBase) studio("models/barney_helmet.mdl") = item_helmet : "Helmet" 
 [
 	soundlist(string) : "Sound Replacement File"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -8228,7 +8235,7 @@
 @PointClass size(-14 -14 0, 14 14 36) base(ItemsBase) studio("models/w_longjump.mdl") = item_longjump : "Longjump module" 
 [
 	soundlist(string) : "Sound Replacement File"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -8269,7 +8276,7 @@
 @PointClass size(-12 -12 0, 12 12 1) base(ItemsBase) studio("models/w_security.mdl") = item_security : "Security card"
 [
 	soundlist(string) : "Sound Replacement File"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -8310,7 +8317,7 @@
 @PointClass size(-15 -15 0, 15 15 64) base(ItemsBase) studio("models/w_suit.mdl") = item_suit : "HEV Suit"
 [
 	soundlist(string) : "Sound Replacement File"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -8377,7 +8384,7 @@
 		9 : "Slow strobe"
 	]
 	pattern(string) : "Custom Appearance"
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	_fade(string) : "ZHLT Light Fade" : "1.0"
 	_falloff(choices) : "ZHLT Light Falloff" : 0 =
 	[
@@ -8434,7 +8441,7 @@
 	_light(color255) : "Color & Brightness" : "255 255 128 200"
 	_diffuse_light(color255) : "Ambient Color" : ""
 	_spread(string) : "Sun Spread" : ""
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	_fade(string) : "ZHLT Light Fade" : "1.0"
 	_falloff(choices) : "ZHLT Light Falloff" : 0 =
 	[
@@ -8509,7 +8516,7 @@
 		9 : "Slow strobe"
 	]
 	pattern(string) : "Custom Appearance"
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	_fade(string) : "ZHLT Light Fade" : "1.0"
 	_falloff(choices) : "ZHLT Light Falloff" : 0 =
 	[
@@ -8600,7 +8607,7 @@
 		1 : "Fullbright"
 	]
 	master(string) : "Master"
-	blank(string) : "[==== Sound Settings ====]"
+	blank1(string) : "[==== Sound Settings ====]"
 	sounds(choices) : "Sounds" : 0 =
 	[
 		0: "None"
@@ -8904,7 +8911,7 @@
 [
 	netname(string) : "Squad Name"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -8949,7 +8956,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 72) studio("models/controller.mdl") = monster_alien_controller : "Controller"  
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -8998,7 +9005,7 @@
 	]
 	netname(string) : "Squad Name"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9044,7 +9051,7 @@
 [
 	netname(string) : "Squad Name"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9091,7 +9098,7 @@
 [
 	netname(string) : "Squad Name"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9137,7 +9144,7 @@
 [
 	netname(string) : "Squad Name"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9182,7 +9189,7 @@
 @PointClass base(Monster) size(-360 -360 -172, 360 360 8) studio("models/apache.mdl") = monster_apache : "Apache"
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9239,7 +9246,7 @@
 		256 : "Sniper - No drop"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9284,7 +9291,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 36) studio("models/baby_headcrab.mdl") = monster_babycrab : "Baby Headcrab" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9325,7 +9332,7 @@
 @PointClass base(Monster) size(-32 -32 0, 32 32 128) studio("models/babygarg.mdl") = monster_babygarg : "Baby Gargantua" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9366,7 +9373,7 @@
 @PointClass base(Monster) size(-16 -16 -36, 16 16 0) sequence(2) studio("models/barnacle.mdl") = monster_barnacle : "Barnacle Monster" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9448,7 +9455,7 @@
 		70 : "buttonpush"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9502,7 +9509,7 @@
 	]
 	angles(string) : "Model Direction (Pitch Yaw Roll [Y Z X])" : "0 0 0"
 	model(studio) : "Custom Model"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9548,7 +9555,7 @@
 [
 	netname(string) : "First node" : ""
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9593,7 +9600,7 @@
 @PointClass base(Monster) size(-480 -480 -112, 480 480 24) studio("models/blkop_osprey.mdl") = monster_blkop_osprey : "Black Ops Osprey"
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9638,7 +9645,7 @@
 @PointClass base(Monster) size(-360 -360 -172, 360 360 8) studio("models/blkop_apache.mdl") = monster_blkop_apache : "Black Ops Apache"
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9684,7 +9691,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 72) studio("models/floater.mdl") = monster_bloater : "Bloater" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9741,7 +9748,7 @@
 		7 : "Minigun"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9782,7 +9789,7 @@
 @PointClass base(Monster) size(-32 -32 0, 32 32 64) sequence(7) studio("models/bullsquid.mdl") = monster_bullchicken : "BullChicken" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9823,7 +9830,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 36) studio("models/chubby.mdl") = monster_chumtoad : "Chumtoad" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -9959,7 +9966,7 @@
 		135 : "kneel"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10000,7 +10007,7 @@
 @PointClass base(Monster) size(-3 -3 0, 3 3 3) studio("models/roach.mdl") = monster_cockroach : "Cockroach" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10043,7 +10050,7 @@
 	iFlockSize(Integer) : "Flock Size" : 8
 	flFlockRadius(Integer) : "Flock Radius" : 128
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10085,7 +10092,7 @@
 [
 	sequence(string) : "Animation Sequence (Number)" : "0"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10126,7 +10133,7 @@
 @PointClass base(Monster) size(-32 -32 0, 32 32 128) studio("models/garg.mdl") = monster_gargantua : "Gargantua" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10173,7 +10180,7 @@
 		1 : "Yes"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10219,7 +10226,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 72) studio("models/gman.mdl") = monster_gman : "G-Man" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10260,7 +10267,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 72) sequence(3) studio("models/gonome.mdl") = monster_gonome : "Gonome" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10320,7 +10327,7 @@
 		4 : "Bandana Black"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10375,7 +10382,7 @@
 		16 : "Saw"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10422,7 +10429,7 @@
 	angles(string) : "Pitch Yaw Roll (Y Z X)" : "0 0 0"
 	health(integer) : "Delay before explosion" : 0
 	new_model(studio) : "Custom Model" : ""
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10467,7 +10474,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 36) studio("models/headcrab.mdl") = monster_headcrab : "Head Crab"
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10523,7 +10530,7 @@
 	]
 	angles(string) : "Model Direction (Pitch Yaw Roll [Y Z X])" : "0 0 0"
 	model(studio) : "Custom Model"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10588,7 +10595,7 @@
 	]
 	model(studio) : "Custom Model"
 	angles(string) : "Model Direction (Pitch Yaw Roll [Y Z X])" : "0 0 0"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10634,7 +10641,7 @@
 [
 	netname(string) : "Squad Name"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10679,7 +10686,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 72) studio("models/hassassin.mdl") = monster_human_assassin : "Human Assassin" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10737,7 +10744,7 @@
 		130 : "Sniper Rifle + HG"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10802,7 +10809,7 @@
 		7 : "Beret (Black)"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10879,7 +10886,7 @@
 	]
 	model(studio) : "Custom Model"
 	angles(string) : "Model Direction (Pitch Yaw Roll [Y Z X])" : "0 0 0"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10938,7 +10945,7 @@
 		4 : "Hypodermic Needle"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -10989,7 +10996,7 @@
 		2 : "Blow Torch"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11047,7 +11054,7 @@
 		1 : "Yes"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11098,7 +11105,7 @@
 		256 : "No"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11143,7 +11150,7 @@
 @PointClass base(Monster) size(-32 -32 0, 32 32 64) studio("models/icky.mdl") = monster_ichthyosaur : "Ichthyosaur" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11184,7 +11191,7 @@
 @PointClass base(Monster) size(-24 -24 0, 24 24 112) studio("models/kingpin.mdl") = monster_kingpin : "Kingpin"
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11225,7 +11232,7 @@
 @PointClass base(Monster) size(-6 -6 0, 6 6 6) studio("models/leech.mdl") = monster_leech : "Leech"
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11284,7 +11291,7 @@
 		256 : "Sniper - No drop"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11343,7 +11350,7 @@
 		4 : "Hypodermic Needle"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11401,7 +11408,7 @@
 	turnrate(integer) : "Turn Rate" : 30
 	attackrange(integer) : "Max Attack Range" : 1200
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11442,7 +11449,7 @@
 @PointClass base(Monster) size(-192 -192 0, 192 192 384) studio("models/nihilanth.mdl") = monster_nihilanth : "Nihilanth"  
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11497,7 +11504,7 @@
 	]
 	num(integer) : "(Override) Number of Grunts" : 0
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11584,7 +11591,7 @@
 			60 : "candygrab"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11642,7 +11649,7 @@
 	]
 	model(studio) : "Custom Model"
 	angles(string) : "Model Direction (Pitch Yaw Roll [Y Z X])" : "0 0 0"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11689,7 +11696,7 @@
 	netname(string) : "Squad Name"
 	initammo(string) : "Initial Ammo (Spikes to spit)" : "6"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11734,7 +11741,7 @@
 @PointClass base(Monster) size(-6 -6 0, 6 6 6) studio("models/bigrat.mdl") = monster_rat : "Rat" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11784,7 +11791,7 @@
 		10 : "Shotgun + HG"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11837,7 +11844,7 @@
 		10 : "Shotgun + HG"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -11899,7 +11906,7 @@
 		0 : "Yes"
 		1 : "No"
 	]
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12044,7 +12051,7 @@
 		127 : "kneel"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12113,7 +12120,7 @@
 	]
 	model(studio) : "Custom Model"
 	angles(string) : "Model Direction (Pitch Yaw Roll [Y Z X])" : "0 0 0"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12159,7 +12166,7 @@
 [
 	attackrange(integer) : "Max Attack Range" : 1200
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12205,7 +12212,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 36) studio("models/w_shock.mdl") = monster_shockroach : "Shock Roach" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12246,7 +12253,7 @@
 [
 	netname(string) : "Squad Name"
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12308,7 +12315,7 @@
 		75 : "sitting3"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12349,7 +12356,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 36) studio("models/w_squeak.mdl") = monster_snark : "Armed Snark" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12390,7 +12397,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 36) sequence(1) studio("models/w_sqknest.mdl") = monster_sqknest : "Snark Nest" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12431,7 +12438,7 @@
 @PointClass base(Monster) size(-24 -24 0, 24 24 24) sequence(20) studio("models/stukabat.mdl") = monster_stukabat : "Stukabat"  
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12480,7 +12487,7 @@
 		2 : "Water"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12527,7 +12534,7 @@
 		2 : "Blow Torch"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12572,7 +12579,7 @@
 @PointClass base(Monster) studio("models/vhe-models/w_tripmine_hammer.mdl") = monster_tripmine : "Active Tripmine"
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12625,7 +12632,7 @@
 	turnrate(integer) : "Turn Rate" : 30
 	attackrange(integer) : "Max Attack Range" : 1200
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12709,7 +12716,7 @@
 		52 : "get_run_over"
 	]
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12750,7 +12757,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 72) studio("models/zombie_barney.mdl") = monster_zombie_barney : "Barney Zombie" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12791,7 +12798,7 @@
 @PointClass base(Monster) size(-16 -16 0, 16 16 72) studio("models/zombie_soldier.mdl") = monster_zombie_soldier : "Soldier Zombie" 
 [
 	soundlist(string) : "Sound Replacement File"
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -12928,7 +12935,7 @@
 	m_imaxlivechildren(integer) : "Max live children" : 5
 	health(integer) : "Custom Health" : 0
 	path_name(string) : "Path Name" //The name of the path_waypoint, path_condition, or path_condition_controller this monster will look to.
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -13032,7 +13039,7 @@
 		0 : "No (Default)"
 		1 : "Yes"
 	]
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -13296,7 +13303,7 @@
 		0: "Respawn all outside"
 		1: "Respawn all inside"
 	]
-	blank(string) : "[==== ZHLT Options ====]"
+	blank1(string) : "[==== ZHLT Options ====]"
 	zhlt_usemodel(string) : "ZHLT Template Model Target"
 	zhlt_copylight(string) : "ZHLT Copy Lighting From Target"
 	zhlt_noclip(choices) : "ZHLT Disable Clipping" : 0 =
@@ -13356,7 +13363,7 @@
     killtarget(target_destination) : "Kill Target"
     delay(string) : "Delay Before Trigger" : "0"
     angles(string) : "Pitch Yaw Roll (Y Z X)" : "0 0 0"
-    blank(string) : "[==== Monster Options ====]"
+    blank1(string) : "[==== Monster Options ====]"
 	m_iszEntity(string) : "Target Monster"
 	m_iszPlay(string) : "Action Animation" : ""
 	m_iszIdle(string) : "Idle Animation" : ""
@@ -13455,7 +13462,7 @@
 	//Angelscript function to call on creation of a monster. Format: void FunctionName(MonsterEntity@ pSquadmaker, Entity@ pMonster)
 	function_name(string) : "Angelscript function name" 
 	soundlist(string) : "Sound Replacement File"	
-	blank(string) : "[==== Monster Spawn Settings ====]"
+	blank1(string) : "[==== Monster Spawn Settings ====]"
 	monstertype(choices) : "Monster Type" : "monster_headcrab" =
 	[
 		"" : "Enter custom monster's name here"
@@ -13959,7 +13966,7 @@
 [
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"	
-	blank(string) : "[==== Mouse Action Options ====]"	
+	blank1(string) : "[==== Mouse Action Options ====]"	
 	mouse_action_0_0(choices) : "Left Click Action" : 0 =
 	[
 		0 : "No Action"
@@ -14223,7 +14230,7 @@
 	changetarget(target_destination) : "Change Target"
 	changedelay(string) : "Delay before change target" : "0"
 	percent_of_players(string) : "Percentage of players needed" : "0"
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	keep_inventory(choices) : "Players take inventory to new map" : 1 =
 	[
 		0 : "No"
@@ -14540,7 +14547,7 @@
 	]
 	message(string) : "Message (set sound too!)"	
 	master(string) : "Master"	
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -14771,7 +14778,7 @@
 	gravity(integer) : "Gravity (0-1)" : 1
 	message(string) : "Message (set sound too!)"	
 	master(string) : "Master"	
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -14874,7 +14881,7 @@
 		4194304 : "SLOWFREEZE"
 	]
 	master(string) : "Master"	
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -15014,7 +15021,7 @@
 	]
 	message(string) : "Message (set sound too!)"	
 	master(string) : "Master"	
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -15121,7 +15128,7 @@
 	]
 	message(string) : "Message (set sound too!)"	
 	master(string) : "Master"	
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -15231,7 +15238,7 @@
 	]
 	message(string) : "Message (set sound too!)"	
 	master(string) : "Master"	
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -15584,7 +15591,7 @@
 	netname(target_destination) : "Target Path"		
 	message(string) : "Message (set sound too!)"	
 	master(string) : "Master"	
-	blank(string) : "[==== Inventory Rules ====]"
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -15737,7 +15744,7 @@
 		5: "Hover in the air"
 		8: "Hover in the air, ignore brush collision"
 	]			
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
 	renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -15823,7 +15830,7 @@
 		0 : "Normal (flat)"
 		1 : "Realistic (tilted)"
 	]				
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
 	renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -15913,7 +15920,7 @@
 	m_flPrimaryAmmoNeeded(string) : "Ammo needed/used to fire primary"
 	m_flSecondaryAmmoNeeded(string) : "Ammo needed/used to fire secondary"
 	m_flTertiaryAmmoNeeded(string) : "Ammo needed/used to fire tertiary"				
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
 	renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -16023,7 +16030,7 @@
 		5: "Hover in the air"
 		8: "Hover in the air, ignore brush collision"
 	]		
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
 	renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -16117,7 +16124,7 @@
 	minhullsize(string) : "Custom Min Hull Size (X Y Z)" : "0 0 0"
 	maxhullsize(string) : "Custom Max Hull Size (X Y Z)" : "0 0 0"
 	soundlist(string) : "Sound Replacement File"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
 	renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -16165,7 +16172,7 @@
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"
     angles(string) : "Object Orientation (Pitch Yaw Roll [Y Z X])" : "0 0 0"	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
 	renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
@@ -16240,7 +16247,7 @@
 		18 : "Team 3"
 		19 : "Team 4"
 	]	
-	blank(string) : "[==== Render Settings ====]"
+	blank1(string) : "[==== Render Settings ====]"
 	renderfx(choices) : "Render FX" : 0 =
 	[
 		0: "Normal"
