@@ -14219,23 +14219,18 @@
 [
 	ondestroyfn(string) : "OnDestroy Function"	
 	targetname(target_source) : "Name"
-	spawnflags(flags) =
-	[
-		1: "No Intermission" : 0
-		2: "USE Only" : 0
-		4: "No CVAR override" : 0
-	]
 	map(string) : "New map name"
-	landmark(string) : "Landmark name"
-	changetarget(target_destination) : "Change Target"
-	changedelay(string) : "Delay before change target" : "0"
-	percent_of_players(string) : "Percentage of players needed" : "0"
-	blank1(string) : "[==== Inventory Rules ====]"
 	keep_inventory(choices) : "Players take inventory to new map" : 1 =
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]		
+	landmark(string) : "Landmark name"
+	changetarget(target_destination) : "Change Target"
+	changedelay(string) : "Delay before change target" : "0"
+	percent_of_players(string) : "Percentage of players needed" : "0"
+	master(string) : "Master"	
+	blank1(string) : "[==== Inventory Rules ====]"
 	item_name_required(string) : "Inventory: Need item(s)" : ""
 	item_group_required(string) : "Inventory: Need item(s) from group(s)" : ""
 	item_group_required_num(integer) : "Inventory: Item count in group need have (0 = all)" : 0
@@ -14269,6 +14264,12 @@
 		1 : "Yes"
 	]
 	target_on_fail(string) : "Target: Inventory rules failed" : ""
+	spawnflags(flags) =
+	[
+		1: "No Intermission" : 0
+		2: "USE Only" : 0
+		4: "No CVAR override" : 0
+	]	
 ]
 
 @PointClass color(100 100 200) iconsprite("sprites/editor/trigger_changemaxammo.spr") = trigger_changemaxammo : "Trigger Change Max Ammo"
