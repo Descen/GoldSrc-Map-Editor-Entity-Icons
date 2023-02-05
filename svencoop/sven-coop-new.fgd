@@ -612,7 +612,7 @@
     ondestroyfn(string) : "OnDestroy Function"
     targetname(target_source) : "Name"
     angles(string) : "Pitch Yaw Roll (Y Z X)" : "0 0 0"
-	model(studio) : "Model"
+	model(studio) : "Model" : "models/editor/genericmdl.mdl"
 	blank1(string) : "[==== Render Settings ====]"
     renderfx(choices) : "Render FX" : 0 =
 	[
@@ -741,6 +741,7 @@
 		11: "See Player, Not In Combat"
 	]
 	TriggerTarget(String) : "Trigger Condition Target"
+	model(studio) : "Custom Model" : "models/editor/genericmdl.mdl"	
 	body(choices) : "Body" : 0 =
 	[
 		0 : "0"
@@ -768,7 +769,6 @@
 		2 : "Yellow"
 	]
 	health(integer) : "Custom Health" : 0
-	model(studio) : "Custom Model"
 	minhullsize(string) : "Custom Min Hull Size (X Y Z)" : "0 0 0"
 	maxhullsize(string) : "Custom Max Hull Size (X Y Z)" : "0 0 0"
 	soundlist(string) : "Sound Replacement File"
@@ -14320,6 +14320,7 @@
 	targetname(target_source) : "Name"
     target(target_destination) : "Target"	
 	model(studio) : "New Model Name" : ""
+	body(integer) : "Body" : 0	
 	skin(integer) : "Skin" : 0
 ]
 
@@ -15313,7 +15314,25 @@
 [
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"	
-	target_count(integer) : "Target Count" : 4
+	target_count(choices) : "Target Count" : 4 =
+	[
+		1 : "1"
+		2 : "2"
+		3 : "3"
+		4 : "4"
+		5 : "5"
+		6 : "6"
+		7 : "7"
+		8 : "8"
+		9 : "9"
+		10 : "10"
+		11 : "11"
+		12 : "12"
+		13 : "13"
+		14 : "14"
+		15 : "15"
+		16 : "16"
+	]
 	target1(target_destination) : "Target 1"
 	target2(target_destination) : "Target 2"
 	target3(target_destination) : "Target 3"
