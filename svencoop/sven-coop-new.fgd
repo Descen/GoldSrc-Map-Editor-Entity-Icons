@@ -1952,7 +1952,7 @@
 	]
 	delay(string) : "Delay before trigger" : "0"
 	wait(integer) : "Delay before reset (-1 stay)" : 3
-	health(integer) : "Health (shootable if 0)" : 0		
+	health(integer) : "Health (shootable if >0)" : 0		
 	blank2(string) : "[==== Speed & Movement ====]"		
 	angles(choices) : "Movement Direction" : "0 0 0" =
 	[
