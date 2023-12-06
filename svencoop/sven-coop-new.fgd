@@ -199,7 +199,6 @@
 [
     ondestroyfn(string) : "OnDestroy Function"
     targetname(target_source) : "Name"
-    blank1(string) : ""
 	message(sound) : "Sound File"
 	health(integer) : "Volume (10 = loudest)" : 10
 	playmode(choices) : "Play Mode" : 0 =
