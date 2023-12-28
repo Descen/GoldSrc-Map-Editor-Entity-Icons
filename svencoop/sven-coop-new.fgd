@@ -1781,9 +1781,6 @@
 	gibmodel(studio) : "Gib Model" : ""
 	spawnobject(choices) : "Spawn On Break" : 0 =
 	[
-		"" : "Enter custom item's/weapon's name here"
-		"" : "Example: weapon_laser_gun"
-		"" : "Or choose from the list below:"
 		0:  "Nothing"
 		1:  "Battery"
 		2:  "Healthkit"
