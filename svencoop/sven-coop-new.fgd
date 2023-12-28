@@ -15595,8 +15595,8 @@
 	]
 	teleport_if_blocked(choices) : "Teleport If Blocked" : 0 =
 	[
-		0 : "No"
-		1 : "Yes"
+		0 : "Yes"
+		1 : "No"
 	]
 	tiny_monsters(Choices) : "Allow tiny monsters (insects/hornets)" : 0 =
 	[
