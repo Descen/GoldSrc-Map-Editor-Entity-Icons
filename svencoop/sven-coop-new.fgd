@@ -7422,62 +7422,6 @@
 	targetname(target_source) : "Name"
 ]
 
-// Goal pathing entity
-@PointClass color(230 230 232) iconsprite("sprites/editor/info_monster_goal.spr") = info_monster_goal : "Monster goal entity"
-[
-	ondestroyfn(string) : "OnDestroy Function"
-	targetname(target_source) : "Name"
-    target(target_destination) : "Target"
-	// The monster must wait this long (and live) before the goal becomes inactive / targets are fired.
-	delay(integer)	: "Wait before trigger" : 0
-	priority(choices) : "Priority" : 0 =
-	[
-		// Will run to goal if not in combat with an enemy.
-		0 : "No enemy"
-		// Will run to goal if not in combat, or in combat and enemy is hidden.
-		1 : "No enemy/Enemy occluded"
-		// 2, 3 and 4 will still work if the monster does not have an enemy.
-		// Ignores enemies and just tries to make it to the goal point.
-		2 : "Ignore enemy"
-		// If this goal is closer than the enemy, just run to the goal.
-		3 : "Goal closer than enemy"
-		// Same as 3, OR if the enemy isn't visible.
-		4 : "G.C.T.E./Enemy occluded"
-		// Ignore all enemies unless you're able to attack something.
-		5 : "Stop only if can attack"
-	]
-	// How the monster will move to this goal.
-	movementtype(choices) : "Movement Type" : 0 =
-	[
-		0 : "Walk"
-		1 : "Run"
-	]
-	// When in radius, finished moving to the goal
-	radius(integer)	: "Move-Complete Radius" : 0
-	// If (in triggerradius & in radius of specific entity) do not attempt to go to other goal entities.
-	// In other words, trigger radius ensures a monster goes to a specific entity if outside of it;
-	// if inside, it does not count against the entity for going in favor of another.
-	// If closer to the goal than this, this goal is ignored.
-	triggerradius(integer) : "Distance For Inactivity" : 0
-	// If we're farther than this amount, this goal is ignored.
-	requiredradius(integer) : "Maximum Required Distance" : 0
-	// Amount of health the monster is given when completing a goal (limited to maximum health).
-	healthbonus(integer) : "Health Bonus" : 0
-	// Play an animation before triggering stuff.
-	sequence(string) : "Action Animation" : "0"
-	// Becomes monster's enemy when completing the path.
-	enemy(string) : "Target Enemy"
-	spawnflags(Flags) =
-	[
-		8  : "Start Off" : 0
-		// If any monster reaches a goal, any other monsters with that goal will not need to get there. (If this isn't checked)
-		16 : "Multithreaded" : 0
-		// Turns off this entity for all or a specific monster when reached
-		32 : "Toggle On Reach" : 0
-
-	]
-]
-
 @BaseClass = NodeBase
 [
 	hinttype(choices) : "Hint type" : 0 =
@@ -7716,7 +7660,7 @@
 	globalname(string) : "Global Entity Name"
 	targetname(target_source) : "Name"
     target(target_destination) : "Target"
-    killtarget(target_destination) : "Kill Target"
+    //killtarget(target_destination) : "Kill Target"
 	delay(string) : "Delay Before Trigger" : "0"
     angles(string) : "Object Direction (Pitch Yaw Roll [Y Z X]" : "0 0 0"
 	m_flCustomRespawnTime(string) : "Custom respawn time"
@@ -15191,8 +15135,6 @@
 		2: "No Clients" : 0
 		4: "Pushables": 0
 		8: "Everything else": 0
-		16: "Fire On Enter": 0
-		32: "Fire On Exit": 0
 		2048 : "Not in Deathmatch" : 0		
 	]
 ]
