@@ -187,7 +187,7 @@
 		0 : "Default AI"
 		1 : "Ambush"
 	]
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		4 : "Repeatable"    : 0
 		8 : "Leave Corpse"  : 0
@@ -383,7 +383,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-    spawnflags(Flags) =
+    spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -470,7 +470,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-    spawnflags(Flags) =
+    spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -815,7 +815,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-    spawnflags(Flags) =
+    spawnflags(flags) =
 	[
 		1 : "WaitTillSeen" : 0
 		2 : "Gag" : 0
@@ -989,7 +989,7 @@
 		6 : "Opaque + Concave Fix"
 	]
 	light_origin(string) : "ZHLT Light Origin Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start Off" 	: 0
 	]
@@ -1265,7 +1265,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1: "No Renderfx" : 0
 		2: "No Renderamt" : 0
@@ -1285,7 +1285,7 @@
 	targetname(target_source) : "Name"
     target(target_destination) : "Target"
 	_text(string) : "Sentence"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Activator Only" : 0
 	]
@@ -1369,7 +1369,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Repeatable"  : 0	
 		2048 : "Not in Deathmatch" : 0
@@ -2203,7 +2203,7 @@
 		6 : "Opaque + Concave Fix"
 	]
 	light_origin(string) : "ZHLT Light Origin Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start Off" : 1
 		2 : "Directional (Angles)" : 0
@@ -3208,7 +3208,7 @@
 		6 : "Opaque + Concave Fix"
 	]
 	light_origin(string) : "ZHLT Light Origin Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -3327,7 +3327,7 @@
 		6 : "Opaque + Concave Fix"
 	]
 	light_origin(string) : "ZHLT Light Origin Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start On" : 0
 	]
@@ -3417,7 +3417,7 @@
 		6 : "Opaque + Concave Fix"
 	]
 	light_origin(string) : "ZHLT Light Origin Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -3932,7 +3932,7 @@
 		6 : "Opaque + Concave Fix"
 	]
 	light_origin(string) : "ZHLT Light Origin Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1: "Toggle" : 0
 		2048 : "Not in Deathmatch" : 0
@@ -4090,7 +4090,7 @@
 		6 : "Opaque + Concave Fix"
 	]
 	light_origin(string) : "ZHLT Light Origin Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1: "Toggle" : 1
 		64: "X Axis" : 0
@@ -4389,7 +4389,7 @@
 		6 : "Opaque + Concave Fix"
 	]
 	light_origin(string) : "ZHLT Light Origin Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -6944,7 +6944,7 @@
 		1 : "Yes"
 	]
 	zhlt_embedlightmapresolution(integer) : "ZHLT Embed Light Map Resolution" : 4
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Ignore Dead Players" : 0
 	]
@@ -6965,7 +6965,7 @@
 	m_flVariance(string) : "Course Variance" : "0.15"
 	// Time in seconds for gibs to live +/- 5%
 	m_flGibLife(string) : "Gib Life" : "4"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Repeatable"  : 0
 	]
@@ -6984,7 +6984,7 @@
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"
 	texture(decal)
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -7007,7 +7007,7 @@
 	reachsequence(string) : "Sequence on approach" : ""
 	health(string) : "Health on approach" : ""
 	presequence(string) : "Sequence before approach" : ""
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Run To Node" : 0
 		2 : "Wait Indefinitely" : 0
@@ -7016,7 +7016,7 @@
 
 @PointClass color(255 231 127) iconsprite("sprites/editor/info_compile_parameters.spr") = info_compile_parameters : "Map Compile Parameters"
 [
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Ignore shared settings" : 0
 		2 : "Ignore CSG settings" : 0
@@ -7541,7 +7541,7 @@
 	targetname(target_source) : "Name"
     target(target_destination) : "Target"
     angles(string) : "Direction (Pitch Yaw Roll [Y Z X])" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -7564,7 +7564,7 @@
 	message(string) : "Filter Player Targetname"
 	frags(string) : "Repel Speed"
 	master(string) : "Master"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		// Disable this spawn point when the map starts
 		2 : "Start Off" : 0
@@ -7633,7 +7633,7 @@
 		"90 0 0": "Down"
 	]
 	teleport_cooldown(string) : "Teleport Cooldown Delay" : "1"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "Trigger on arrival" : 0
 		2048 : "Not in Deathmatch" : 0
@@ -7680,7 +7680,7 @@
 	minhullsize(string) : "Custom Min Hull Size (X Y Z)" : "0 0 0"
 	maxhullsize(string) : "Custom Max Hull Size (X Y Z)" : "0 0 0"
 	soundlist(string) : "Sound Replacement File"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -7922,7 +7922,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -8293,7 +8293,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Short Logon" : 0
 	]
@@ -8332,7 +8332,7 @@
 		1 : "Inverse Linear"
 		2 : "Inverse Square"
 	]
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Initially dark" : 0
 		2 : "Remove Entity" : 0
@@ -8439,7 +8439,6 @@
 		0 : "No"
 		1 : "Yes"
 	]
-	spawnflags(Flags) = [ 1 : "Initially dark" : 0 ]
 	style(choices) : "Appearance" : 0 =
 	[
 		0 : "Normal"
@@ -8463,6 +8462,10 @@
 		0 : "Default"
 		1 : "Inverse Linear"
 		2 : "Inverse Square"
+	]
+	spawnflags(flags) =
+	[
+		1 : "Initially dark" : 0
 	]
 ]
 
@@ -8518,7 +8521,6 @@
 	spawnflags(flags) =
 	[
 		1 : "Initially dark" : 0
-		2048 : "Not in Deathmatch" : 0
 	]
 ]
 
@@ -8732,7 +8734,7 @@
 	path_name(string) : "Path Name" //The name of the path_waypoint, path_condition, or path_condition_controller this monster will look to.
 	// This will make the monster follow/protect whoever is specified
 	guard_ent(string): "Entity to Guard" : ""
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "WaitTillSeen" : 0
 		2 : "Gag" : 0
@@ -8833,7 +8835,7 @@
 	path_name(string) : "Path Name" //The name of the path_waypoint, path_condition, or path_condition_controller this monster will look to.
 	// This will make the monster follow/protect whoever is specified
 	guard_ent(string): "Entity to Guard" : ""
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "WaitTillSeen" : 0
 		2 : "Gag" : 0
@@ -8887,7 +8889,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -8981,7 +8983,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -9027,7 +9029,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 		64 : "IgnorePlayer" : 0
@@ -9074,7 +9076,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -9120,7 +9122,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"			
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -9165,7 +9167,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"		
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		8 : "NoWreckage"	: 0
 		64 : "Start Inactive" : 0
@@ -9222,7 +9224,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"			
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -9485,7 +9487,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -9531,7 +9533,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"		
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1024: "No Babycrabs" : 0
 	]
@@ -9576,7 +9578,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"		
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		64 : "Start Inactive" : 0
 	]
@@ -9621,7 +9623,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"			
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		8 : "NoWreckage"	: 0
 		64 : "Start Inactive" : 0
@@ -9667,7 +9669,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"			
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		8 : "NoWreckage"	: 0
 		64 : "Start Inactive" : 0
@@ -10156,7 +10158,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		4 : "Not solid"	: 0
 		8 : "Head Controller" : 0
@@ -10303,7 +10305,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]		
@@ -10358,7 +10360,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]		
@@ -10405,7 +10407,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -10506,7 +10508,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -10571,7 +10573,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -10617,7 +10619,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -10666,7 +10668,7 @@
 
 @PointClass base(Monster) size(-16 -16 0, 16 16 72) sequence(11) studio("models/hgrunt.mdl") = monster_human_grunt : "Human Grunt (camo)"
 [
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -10785,7 +10787,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"			
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -10862,7 +10864,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -10921,7 +10923,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"		
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -10972,7 +10974,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"		
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]	
@@ -11030,7 +11032,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -11081,7 +11083,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]	
@@ -11267,7 +11269,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]	
@@ -11326,7 +11328,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"			
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]	
@@ -11339,7 +11341,7 @@
 		0 : "Floor Mount"
 		1 : "Ceiling Mount"
 	]
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "Autostart" : 0
 		64 : "Start Inactive" : 0
@@ -11480,7 +11482,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"		
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		64 : "Start Inactive" : 0
 	]
@@ -11625,7 +11627,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -11672,7 +11674,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -11767,7 +11769,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"		
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]	
@@ -11820,7 +11822,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"		
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -11882,7 +11884,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -12096,7 +12098,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2048 : "Not in Deathmatch" : 0
 	]
@@ -12142,7 +12144,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "Autostart" : 0
 		64 : "Start Inactive" : 0
@@ -12229,7 +12231,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"			
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 		1024: "No Shockroach" : 0
@@ -12510,7 +12512,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "SquadLeader" : 0
 	]
@@ -12555,7 +12557,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Instant On" : 1
 	]
@@ -12608,7 +12610,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		32 : "Autostart" : 0
 		64 : "Start Inactive" : 0
@@ -12911,7 +12913,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start ON" 	: 0
 		//2 : "PVS On/Off" : 0
@@ -12926,7 +12928,7 @@
 [
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "multithreaded" : 0
 	]
@@ -13015,7 +13017,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"	
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1  : "Active" : 0
 		16 : "Line of Sight" : 1
@@ -13033,7 +13035,7 @@
 	wait(integer) : "Wait here (secs)" : 0
 	speed(integer) : "New Train Speed" : 0
 	yaw_speed(integer) : "New Train rot. Speed" : 0
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1: "Wait for retrigger" : 0
 		2: "Teleport to this" : 0
@@ -13054,7 +13056,7 @@
 		1 : "Random" 				// Any path_condition entities that [share the same priority level] and are [active] will be evaluated together and randomly chosen.
 		2 : "Nearest to NPC" 		// The nearest path_condition found (to the NPC) will be picked. Distance based on path_waypoint to the NPC.
 	]
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start Off" : 0 // If checked, this controller starts in-active and can not be used until triggered.
 	]	
@@ -13115,7 +13117,7 @@
 	npc_trigger_target(string)   	: "NPC Trigger Target"  					//NPC will trigger this entity when on this path
 	npc_trigger_interval(integer)	: "NPC Trigger Interval" 					//NPC will trigger every N seconds
 	m_szASConditionsName(string)	: "Angelscript condition name"				//Name of the Angelscript condition that was registered by a map script
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start Off" : 0	 // If checked, this path_condition starts in-active and can not be used until triggered with USE_ON or USE_TOGGLE.
 	]
@@ -13196,7 +13198,7 @@
 	newspeed(integer) : "New Train Speed" : -1
 	maxspeed(integer) : "New Maximum Speed" : -1
 	speed(integer) : "New Train Speed (Legacy)" : 0
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1: "Disabled" : 0
 		2: "Fire once" : 0
@@ -13228,7 +13230,7 @@
 		1 : "All players"
 		2 : "All players except activator"
 	]
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Strip suit, too" : 0
 	]	
@@ -13286,7 +13288,7 @@
 		2 : "Large  Radius"
 		3 : "Play Everywhere"
 	]
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Fire Once" 	: 1
 		2 : "Followers Only"	: 0
@@ -13318,7 +13320,7 @@
 		5 : "No - Turn to Face"
 	]
 	moveto_radius(integer) : "Move to Radius" : 0
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		4 : "Repeatable"	: 0
 		8 : "Leave Corpse"	: 0
@@ -13610,7 +13612,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start ON" 	: 0
 		//2 : "PVS On/Off" : 0
@@ -13677,7 +13679,7 @@
 		1 : "On"
 		2 : "Toggle"
 	]
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Remove On fire" : 1
 	]
@@ -14329,7 +14331,7 @@
 	]
 	m_iAppendSpaces(integer) : "Append spaces (for strings)" : 0
 	message(target_destination) : "Trigger after action"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		// For Vectors:
 		1 : "Don't use X" : 0
@@ -14396,7 +14398,7 @@
 	]
 	m_iAppendSpaces(integer) : "Append spaces (for strings)" : 0
 	message(target_destination) : "Trigger after action"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		// For vectors
 		1 : "Don't use X" : 0
@@ -14449,7 +14451,7 @@
 	]
 	// 0.0 means to check every frame
 	m_fCheckInterval(string) : "Check-interval (seconds)" : "0.1"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start Off" : 0
 		// For vectors
@@ -14901,7 +14903,7 @@
 		2097152 : "SLOWBURN"
 		4194304 : "SLOWFREEZE"
 	]
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Instant Kill" : 0
 		2 : "Constant" : 0
@@ -14928,7 +14930,7 @@
 	target(string) : "Target"
 	message(string) : "Entity to look at"
 	angles(string) : "Pitch Yaw Roll (Y Z X)" : "0 0 0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start On" : 0
 		2 : "Set Once" : 0
@@ -15295,7 +15297,7 @@
 
 	min_delay(string) : "Minimum Delay (0 = off)" : "3.0"
 	max_delay(string) : "Maximum Delay (0 = off)" : "7.0"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Start On (Timed only)" : 0
 		2 : "Trigger Once (Timed only)" : 0
@@ -15312,7 +15314,7 @@
 // Unique Trigger Random. Randomly selects an unused trigger.
 @PointClass base(BaseRandom) color(137 137 137) iconsprite("sprites/editor/trigger_random_unique.spr") = trigger_random_unique : "Trigger Random Unique"
 [
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Re-usable" : 0
 	]
@@ -15350,7 +15352,7 @@
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"	
 	netname(String) : "New Player Targetname"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		// If set, trigger_playertarget won't remove itself after being used.
 		1 : "Reusable" : 0
@@ -15363,7 +15365,7 @@
 	ondestroyfn(string) : "OnDestroy Function"
 	targetname(target_source) : "Name"
     target(target_destination) : "Target"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		// Respawn target entity instead of all players.
 		1 : "Respawn Target" : 0
@@ -15454,7 +15456,7 @@
 		1 : "Engine"
 		2 : "Angelscript"
 	]
-	//spawnflags(Flags) =
+	//spawnflags(flags) =
 	//[
 	//	1 : "Set silently" : 0 // Unimplemented!
 	//]	
@@ -15637,7 +15639,7 @@
 	// Where the train wants to stop at.
 	path_name(string) : "Path Name"
 	m_iszSoundNoPath(sound) : "Sound to play if no path is available"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		// Only functions if train is not moving.
 		1 : "Stopped Only" : 0
@@ -15735,7 +15737,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -15821,7 +15823,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -16036,7 +16038,7 @@
 	Snarks(integer) : "Packed snarks"
 	m40a1(integer) : "Packed 7.62mm rounds"
 	sporeclip(integer) : "Packed spores"	
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -16115,7 +16117,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		128 : "TOUCH Only" : 0
 		256 : "USE Only" : 0
@@ -16167,7 +16169,7 @@
 
 @PointClass base(XenBase) size(-8 -8 0, 8 8 32 ) studio("models/hair.mdl") = xen_hair : "Xen Hair"
 [
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		1 : "Sync Movement" : 0
 		2 : "Drop To Ground" : 0
@@ -16238,7 +16240,7 @@
 	]
 	renderamt(integer) : "FX Amount (1 - 255)"
 	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"		
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2 : "Drop To Ground" : 0
 		4 : "Face Randomly" : 0
@@ -16247,7 +16249,7 @@
 
 @PointClass base(XenBase) size(-90 -90 0, 90 90 220 ) studio("models/fungus(large).mdl") = xen_spore_large : "Xen Spore (large)"
 [
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2 : "Drop To Ground" : 0
 		4 : "Face Randomly" : 0
@@ -16257,7 +16259,7 @@
 
 @PointClass base(XenBase) size(-40 -40 0, 40 40 120 ) studio("models/fungus.mdl") = xen_spore_medium : "Xen Spore (medium)"
 [
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2 : "Drop To Ground" : 0
 		4 : "Face Randomly" : 0
@@ -16267,7 +16269,7 @@
 
 @PointClass base(XenBase) size(-16 -16 0, 16 16 64 ) studio("models/fungus(small).mdl") = xen_spore_small : "Xen Spore (small)"
 [
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2 : "Drop To Ground" : 0
 		4 : "Face Randomly" : 0
@@ -16277,7 +16279,7 @@
 
 @PointClass base(XenBase) size(-24 -24 0, 24 24 188 ) studio("models/tree.mdl") = xen_tree : "Xen Tree"
 [
-	spawnflags(Flags) =
+	spawnflags(flags) =
 	[
 		2 : "Drop To Ground" : 0
 		4 : "Face Randomly" : 0
