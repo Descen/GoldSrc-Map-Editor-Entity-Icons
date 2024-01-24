@@ -118,8 +118,10 @@
 	//	1 : "Yes"
 	//]
 
-	scversion2(choices) : "Minimum game version" : 524 =
+scversion2(choices) : "Minimum game version" : 526 =
 	[
+		526 : "5.26 Patch"
+		525 : "5.25 Patch"
 		524 : "5.24 Patch"
 		523 : "5.23 Patch"
 		522 : "5.22 Patch"
